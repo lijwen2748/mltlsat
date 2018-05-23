@@ -1,0 +1,1 @@
+(G[t_min, t_max] (a -> F[t_min, t_max] b) & (~b W[t_min, t_max] a))
