@@ -179,10 +179,10 @@ sub generate_formula {
     print STDERR "generate_formula here: L is $L, N is $n, P is $P, M is $M, and T is $T\n";
     
     if ($L == 1) { #randomly choose one variable
-	my $var_num = int(rand($n));
-	$this = "a${var_num}";
-	#print STDERR "this($this) = N[$randn] for n($n)\n";
-	return ($this);
+	    my $var_num = int(rand($n));
+	    $this = "a${var_num}";
+	    #print STDERR "this($this) = N[$randn] for n($n)\n";
+	    return ($this);
     } #end if
     elsif ($L == 2) { #randomly choose one variable and one unary operator
 	$r = rand; #r is a random variate [0, 1)

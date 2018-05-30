@@ -1,0 +1,36 @@
+This archive contains the artifacts for reproducibility of the experiments in the paper submission for FMCAD 2018:
+
+  Jianwen Li, Kristin Y. Rozier and Moshe Y. Vardi: 
+  			Evaluating the Satisfiability of Mission-Time LTL: A Bounded MTL Over Naturals
+ 
+-------------------------------------------------------------------------------
+
+Directory Structure
+===================
+
+|-- Benchmarks/   		The scripts, patterns and the generated testing formulas. 
+|						For more details, refer to the README inside this folder.
+|
+|-- results/   			The output data of all the algorithms tested in the paper. 
+|						For more details, refer to the README inside this folder.
+|
+|-- running/ 			Perl scripts to run all the tools and algorithms, along with teh slurm scripts to submit the job to the NOTS 
+|								cluster in Rice University (https://docs.rice.edu/confluence/display/CD/NOTS+Overview). 
+|						For more details, refer to the README inside this folder.
+|
+|-- tools/   		    All back-end solvers tested in the experiments. 
+|						For more details, refer to the README inside this folder.
+|
+|-- translator/   		The source codes of our translator MLTLConvertor. 
+|						For more details, refer to the README inside this folder.
+|
+|-- statistics/   		The analysis scripts for extracting results from the data under results/, and the produced plot files. 
+|						For more details, refer to the README inside this folder.
+|
+
+-------------------------------------------------------------------------------
+
+	
+
+For further information, contact Jianwen Li (lijwen2748@gmail.com)
+

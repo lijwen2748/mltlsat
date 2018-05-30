@@ -1,0 +1,37 @@
+This archive contains the analysis scripts for extracting results the produced plot files for the paper submission for FMCAD 2018:
+
+  Jianwen Li, Kristin Y. Rozier and Moshe Y. Vardi: 
+  			Evaluating the Satisfiability of Mission-Time LTL: A Bounded MTL Over Naturals
+ 
+-------------------------------------------------------------------------------
+
+Files Description:
+===========================
+
+|-- plot.pl/   		         The script to generate the plot input file encoding.csv and solving.csv. 
+|						
+|
+|-- plot0.pl/   		     The script to generate the plot input file encoding0.csv and solving0.csv. 
+|						
+|
+|-- encoding.csv/   		 The input of plot file for the encoding cost on random formulas.
+|						
+|
+|-- solving.csv/   		     The input of plot file for the solving cost on random formulas.
+|						
+|
+|-- encoding0.csv/   		 The input of plot file for the encoding cost on random0 formulas.
+|						
+|
+|-- solving0.csv/   		 The input of plot file for the solving cost on random0 formulas.
+|						
+|
+|-- encoding.plot/   		 The gnuplot commands to plot the encoding cost on random formulas. Output is encoding.eps
+|						
+|
+|-- solving.plot/   		 The gnuplot commands to plot the solving cost on random formulas. Ouput is solving.eps
+|						
+|
+|-- solving0.plot/   		 The gnuplot commands to plot the solving cost on random0 formulas. Output is solving0.eps
+|						
+|
