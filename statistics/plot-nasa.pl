@@ -53,8 +53,14 @@ while (my $line = <FORMULA>) {
             if (@data != 3) {
                 die "extract the result error: ${line}!\n";
             }       
+            
             $encoding_cost = $encoding[$i] + $data[1];
-            $solving_cost = $solving[$i] + $data[2];    
+            if ($data[0] eq "unknow") {
+            	$solving_cost = $solving[$i] + $timeout;
+            }
+            else {
+            	$solving_cost = $solving[$i] + $data[2];   
+            } 
         }
         
         
