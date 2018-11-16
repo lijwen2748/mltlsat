@@ -2,8 +2,8 @@ set datafile separator ","
 set autoscale fix
 #set ytics rotate by 90
 set key inside top left
-set xlabel "Solving Time without Encoding Heuristics (sec)"
-set ylabel "Solving Time with Encoding Heuristics (sec)"
+set xlabel "Total Time without Encoding Heuristics (sec)"
+set ylabel "Total Time with Encoding Heuristics (sec)"
 set xrange [0:10]
 set yrange [0:10]
 set terminal postscript eps color font 'Helvetica,20'
