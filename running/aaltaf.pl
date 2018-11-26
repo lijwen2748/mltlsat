@@ -51,7 +51,7 @@ for (my $i = 0; $i < @formula_types; $i ++) {
     } #end elseif
 }
 
-my $timeout = 300;
+my $timeout = 3600;
 my $preprocess_time = 0; #default
 
 ##set the input file
