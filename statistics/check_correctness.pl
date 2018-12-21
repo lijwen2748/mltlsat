@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 #########
-# usage: ./plot.pl
+# usage: ./check_correctness.pl
 #########
 
 my $root = "..";
@@ -12,7 +12,6 @@ my $output_encoding = "./encoding.csv";
 my $output_solving = "./solving.csv";
 my @encoding = (0, 0, 0, 0, 0);
 my @solving = (0, 0, 0, 0, 0);
-my $timeout = 3600;
 
 open (ENCODING_OUT, ">${output_encoding}") or die "cannot open ${output_encoding}\n";
 open (SOLVING_OUT, ">${output_solving}") or die "cannot open ${output_solving}\n";
@@ -33,7 +32,6 @@ while (my $line = <FORMULA>) {
     chomp ($line);
     my @result_encoding = (0, 0, 0, 0, 0);
     my @result_solving = (0, 0, 0, 0, 0);
-    my @results = ("unknow", "unknow", "unknow", "unknow", "unknow");
     for (my $i = 0; $i < @tools; $i ++) {
         my $line_cp = $line;
         my $tool = $tools[$i];
@@ -45,8 +43,8 @@ while (my $line = <FORMULA>) {
         my $encoding_cost = 0;
         my $solving_cost = 0;
         if ($line_res eq "") {
-            $encoding[$i] = $encoding[$i] + $timeout;
-            $solving[$i] = $solving[$i] + $timeout;
+            $encoding[$i] = $encoding[$i] + 300;
+            $solving[$i] = $solving[$i] + 300;
             $encoding_cost = $encoding[$i];
             $solving_cost = $solving[$i];  
         }
@@ -54,16 +52,10 @@ while (my $line = <FORMULA>) {
             my @data = split ("\t\t", $line_res);
             if (@data != 3) {
                 die "extract the result error: ${line}!\n";
-            }      
-            
-            if ($data[0] ne "unknow" && $data[0] ne "timeout") {
-                $results[$i] = $data[0];
-            }
-            
+            }       
             $encoding_cost = $encoding[$i] + $data[1];
             $solving_cost = $solving[$i] + $data[2];    
         }
-        
         
         
         $encoding[$i] = $encoding_cost;
@@ -73,20 +65,6 @@ while (my $line = <FORMULA>) {
         $result_solving[$i] = $result_solving[$i] + ${solving_cost};
         close (IN);
     }
-    
-    ###checking correctness
-        my $result = "unknow";
-        for (my $i = 0; $i < @results; $i ++) {
-            if ($results[$i] ne "unknow") {
-                if ($result eq "unknow") {
-                    $result = $results[$i];
-                }
-                elsif ($result ne $results[$i]) {
-                    print ("Error found at ${line}:\n$tools[0] ($results[0])\n$tools[1] ($results[1])\n$tools[2] ($results[2])\n$tools[3] ($results[3])\n$tools[4] ($results[4])\n");
-                    last;
-                }
-            }
-        }
     
     my $index = $counter - $formula_start + 1;
     print ENCODING_OUT "$index,";
