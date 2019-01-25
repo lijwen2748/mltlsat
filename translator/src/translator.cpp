@@ -46,6 +46,7 @@
             case Formula::And:
                 res = "(" + mltl2ltl (f->l_mf (), finite) + " & " + mltl2ltl (f->r_mf (), finite) + ")";
                 break;
+            case Formula::Weak_Until:
             case Formula::Until:
                 assert (I != NULL);
                 if (I->_left > 0)
@@ -65,6 +66,7 @@
                     exit (0);
                 }
                 break;
+            case Formula::Weak_Release:
             case Formula::Release:
                 assert (I != NULL);
                 if (I->_left > 0)
@@ -84,6 +86,7 @@
                     exit (0);
                 }
                 break;
+            /*
             case Formula::Weak_Until:
                 assert (I != NULL);
                 if (I->_left > 0)
@@ -122,6 +125,7 @@
                     exit (0);
                 }
                 break;
+            */
             default:
                 res = f->to_string ();
                 break;
@@ -259,11 +263,11 @@
                 return;
             }
             
-            Formula::opkind prefix_op = (f->oper () == Formula::Until || f->oper () == Formula::Release) ? Formula::Next : Formula::Weak_Next;
-            string prefix_next = (f->oper () == Formula::Until || f->oper () == Formula::Release) ? "!Tail & next" : "Tail | next";
+            Formula::opkind prefix_op = Formula::Next;
+            string prefix_next = "!Tail & next";
             
-            Formula::opkind op = (f->oper () == Formula::Until || f->oper () == Formula::Weak_Until) ? Formula::Next : Formula::Weak_Next;
-            string next = (f->oper () == Formula::Until || f->oper () == Formula::Weak_Until) ? "!Tail & next" : "Tail | next";
+            Formula::opkind op = Formula::Next;
+            string next =  "!Tail & next" ;
             string imply = sloppy_ ? " -> " : " <-> ";
             
             //special case that interval in f is [0,1]
@@ -400,26 +404,31 @@
                 res += "(and (> " + len + " 0) (not " + smtlib_expr (f->r_mf (), loc, len) + "))";
                 break;
             case Formula::And:
-                res += "(and " + smtlib_expr (f->l_mf (), loc, len) + " " + smtlib_expr (f->r_mf (), loc, len) + ")";
+                res += "(and (> " + len + " 0) (and " + smtlib_expr (f->l_mf (), loc, len) + " " + smtlib_expr (f->r_mf (), loc, len) + "))";
                 break;
             case Formula::Or:
-                res += "(or " + smtlib_expr (f->l_mf (), loc, len) + " " + smtlib_expr (f->r_mf (), loc, len) + ")";
+                res += "(and (> " + len + " 0) (or " + smtlib_expr (f->l_mf (), loc, len) + " " + smtlib_expr (f->r_mf (), loc, len) + "))";
                 break;
             case Formula::Undefined:  
                 cout << "smtlib_expr error: cannot recognize the MLTL formula\n";
                 exit (0);
+            case Formula::Weak_Until: //equal to Until
+            /*
+                res += "(or (<= " + len + " " + int2str (f->interval ()->_left) + ") (exists ((" + quantify_var1 + " Int)) (and (and (>= " + quantify_var1 + " " + "(+ " + loc + " " + int2str (f->interval ()->_left) + ")" + ") (<= " + quantify_var1 + " " + "(+ " + loc + " " + int2str (f->interval ()->_right) + ")" + ")) (and " + "(not " + smtlib_expr (f->r_mf (), quantify_var1, new_len1) + ")" + " (forall ((" + quantify_var2 + " Int)) (or (or (< " + quantify_var2 + " (+ " + loc + " " + int2str (f->interval ()->_left) + ")" + ") (>= " + quantify_var2 + " " + quantify_var1 + ")) " + "(not " + smtlib_expr (f->l_mf (), quantify_var2, new_len2) + ")))))))";
+                break;
+            */
             case Formula::Until:    
                 res += "(and (> "+ len + " " + int2str (f->interval ()->_left) + ") (exists ((" + quantify_var1 + " Int)) (and (and (>= " + quantify_var1 + " " + "(+ " + loc + " " + int2str (f->interval ()->_left) + ")" + ") (<= " + quantify_var1 + " " + "(+ " + loc + " " + int2str (f->interval ()->_right) + ")" + ")) (and " + smtlib_expr (f->r_mf (), quantify_var1, new_len1) + " (forall ((" + quantify_var2 + " Int)) (implies (and (>= " + quantify_var2  + " (+ " + loc + " " + int2str (f->interval ()->_left) + ")" + ") (< " + quantify_var2 + " " + quantify_var1 + ")) " + smtlib_expr (f->l_mf (), quantify_var2, new_len2) + "))))))";
                 break;
-            case Formula::Weak_Release:
+            case Formula::Weak_Release:// equal to Release
+            /*
                 res += "(or (<= " + len + " " + int2str (f->interval ()->_left) + ") (forall ((" + quantify_var1 + " Int)) (implies (and (>= " + quantify_var1 + " " + "(+ " + loc + " " + int2str (f->interval ()->_left) + ")" + ") (<= " + quantify_var1 + " " + "(+ " + loc + " " + int2str (f->interval ()->_right) + ")" + ")) (or " + "(not " + smtlib_expr (f->r_mf (), quantify_var1, new_len1) + ")" + " (exists ((" + quantify_var2 + " Int)) (and (and (>= " + quantify_var2 + " (+ " + loc + " " + int2str (f->interval ()->_left) + ")" + ") (< " + quantify_var2 + " " + quantify_var1 + ")) " + "(not " + smtlib_expr (f->l_mf (), quantify_var2, new_len2) + ")))))))";
                 break;
+            */
             case Formula::Release:
                  res += "(and (> " + len + " " + int2str (f->interval ()->_left) + ") (forall ((" + quantify_var1 + " Int)) (implies (and (>= " + quantify_var1 + " " + "(+ " + loc + " " + int2str (f->interval ()->_left) + ")" + ") (<= " + quantify_var1 + " " + "(+ " + loc + " " + int2str (f->interval ()->_right) + ")" + ")) (or " + smtlib_expr (f->r_mf (), quantify_var1, new_len1) + " (exists ((" + quantify_var2 + " Int)) (and (and (>= " + quantify_var2 + " (+ " + loc + " " + int2str (f->interval ()->_left) + ")" + ") (< " + quantify_var2 + " " + quantify_var1 + ")) " + smtlib_expr (f->l_mf (), quantify_var2, new_len2) + "))))))";
                 break;
-            case Formula::Weak_Until:
-                res += "(or (<= " + len + " " + int2str (f->interval ()->_left) + ") (exists ((" + quantify_var1 + " Int)) (and (and (>= " + quantify_var1 + " " + "(+ " + loc + " " + int2str (f->interval ()->_left) + ")" + ") (<= " + quantify_var1 + " " + "(+ " + loc + " " + int2str (f->interval ()->_right) + ")" + ")) (and " + "(not " + smtlib_expr (f->r_mf (), quantify_var1, new_len1) + ")" + " (forall ((" + quantify_var2 + " Int)) (or (or (< " + quantify_var2 + " (+ " + loc + " " + int2str (f->interval ()->_left) + ")" + ") (>= " + quantify_var2 + " " + quantify_var1 + ")) " + "(not " + smtlib_expr (f->l_mf (), quantify_var2, new_len2) + ")))))))";
-                break;
+            
             default: //atoms
                 res += "(and (> " + len + " 0) (" + f->to_string () + " " + loc + "))";
                 break;

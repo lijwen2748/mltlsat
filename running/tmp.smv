@@ -1,0 +1,662 @@
+MODULE main
+VAR
+	a0 : boolean;
+	S1 : boolean;
+	S3 : boolean;
+	S5 : boolean;
+	S7 : boolean;
+	S9 : boolean;
+	S11 : boolean;
+	S13 : boolean;
+	S15 : boolean;
+	S17 : boolean;
+	S19 : boolean;
+	S21 : boolean;
+	S23 : boolean;
+	S25 : boolean;
+	S29 : boolean;
+	S31 : boolean;
+	S33 : boolean;
+	S35 : boolean;
+	S37 : boolean;
+	S39 : boolean;
+	S41 : boolean;
+	S43 : boolean;
+	S45 : boolean;
+	S47 : boolean;
+	S49 : boolean;
+	S51 : boolean;
+	S53 : boolean;
+	S55 : boolean;
+	S57 : boolean;
+	S59 : boolean;
+	S61 : boolean;
+	S63 : boolean;
+	S65 : boolean;
+	S67 : boolean;
+	S69 : boolean;
+	S71 : boolean;
+	S73 : boolean;
+	S75 : boolean;
+	S77 : boolean;
+	S79 : boolean;
+	S81 : boolean;
+	S83 : boolean;
+	S85 : boolean;
+	S87 : boolean;
+	S89 : boolean;
+	S91 : boolean;
+	S93 : boolean;
+	S95 : boolean;
+	S97 : boolean;
+	S99 : boolean;
+	S101 : boolean;
+	S103 : boolean;
+	S105 : boolean;
+	S107 : boolean;
+	S109 : boolean;
+	S111 : boolean;
+	S113 : boolean;
+	S115 : boolean;
+	S117 : boolean;
+	S119 : boolean;
+	S121 : boolean;
+	S123 : boolean;
+	S125 : boolean;
+	S127 : boolean;
+	S129 : boolean;
+	S131 : boolean;
+	S133 : boolean;
+	S135 : boolean;
+	S137 : boolean;
+	S139 : boolean;
+	S141 : boolean;
+	S143 : boolean;
+	S145 : boolean;
+	S147 : boolean;
+	S149 : boolean;
+	S151 : boolean;
+	S153 : boolean;
+	S155 : boolean;
+	S157 : boolean;
+	S159 : boolean;
+	S161 : boolean;
+	S163 : boolean;
+	S165 : boolean;
+	S167 : boolean;
+	S169 : boolean;
+	S171 : boolean;
+	S173 : boolean;
+	S175 : boolean;
+	S177 : boolean;
+	S179 : boolean;
+	S181 : boolean;
+	S183 : boolean;
+	S185 : boolean;
+	S186 : boolean;
+	S187 : boolean;
+	S189 : boolean;
+	S191 : boolean;
+	S193 : boolean;
+	S195 : boolean;
+	S197 : boolean;
+	S199 : boolean;
+	S201 : boolean;
+	S203 : boolean;
+	S205 : boolean;
+	S207 : boolean;
+	S209 : boolean;
+	S211 : boolean;
+	S213 : boolean;
+	S215 : boolean;
+	S217 : boolean;
+	S219 : boolean;
+	S221 : boolean;
+	S223 : boolean;
+	S225 : boolean;
+	S227 : boolean;
+	S229 : boolean;
+	S231 : boolean;
+	S233 : boolean;
+	S235 : boolean;
+	S237 : boolean;
+	S239 : boolean;
+	S241 : boolean;
+	S243 : boolean;
+	S245 : boolean;
+	S247 : boolean;
+	S249 : boolean;
+	S251 : boolean;
+	S253 : boolean;
+	S255 : boolean;
+	S257 : boolean;
+	S259 : boolean;
+	S261 : boolean;
+	S263 : boolean;
+	S265 : boolean;
+	S267 : boolean;
+	S269 : boolean;
+	S271 : boolean;
+	S273 : boolean;
+	S275 : boolean;
+	S277 : boolean;
+	S279 : boolean;
+	S281 : boolean;
+	S283 : boolean;
+	S285 : boolean;
+	S287 : boolean;
+	S289 : boolean;
+	S291 : boolean;
+	S293 : boolean;
+	S295 : boolean;
+	S297 : boolean;
+	S299 : boolean;
+	S301 : boolean;
+	S303 : boolean;
+	S305 : boolean;
+	S307 : boolean;
+	S309 : boolean;
+	S311 : boolean;
+	S313 : boolean;
+	S315 : boolean;
+	S317 : boolean;
+	S319 : boolean;
+	S321 : boolean;
+	S323 : boolean;
+	S325 : boolean;
+	S327 : boolean;
+	S329 : boolean;
+	S331 : boolean;
+	S333 : boolean;
+	S335 : boolean;
+	S337 : boolean;
+	S339 : boolean;
+	S341 : boolean;
+	S343 : boolean;
+	S345 : boolean;
+	S347 : boolean;
+	S349 : boolean;
+	S351 : boolean;
+	S353 : boolean;
+	S355 : boolean;
+	S357 : boolean;
+	S359 : boolean;
+	S361 : boolean;
+	S363 : boolean;
+	S365 : boolean;
+	S367 : boolean;
+	S369 : boolean;
+	S371 : boolean;
+	S373 : boolean;
+	S375 : boolean;
+	S377 : boolean;
+	S379 : boolean;
+	S381 : boolean;
+	S383 : boolean;
+	S384 : boolean;
+	S385 : boolean;
+	S387 : boolean;
+	S389 : boolean;
+	S391 : boolean;
+	S393 : boolean;
+	S395 : boolean;
+	S397 : boolean;
+	S399 : boolean;
+	S401 : boolean;
+	S403 : boolean;
+	S405 : boolean;
+	S407 : boolean;
+	S409 : boolean;
+	S411 : boolean;
+	S413 : boolean;
+	S415 : boolean;
+	S417 : boolean;
+	S419 : boolean;
+	S421 : boolean;
+	S423 : boolean;
+	S425 : boolean;
+	S427 : boolean;
+	S429 : boolean;
+	S430 : boolean;
+	Tail : boolean;
+INIT
+	((a0 & a0) & S0)
+DEFINE
+	S0 := S1;
+	S2 := S3;
+	S4 := S5;
+	S6 := S7;
+	S8 := S9;
+	S10 := S11;
+	S12 := S13;
+	S14 := S15;
+	S16 := S17;
+	S18 := S19;
+	S20 := S21;
+	S22 := S23;
+	S24 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S25));
+	S28 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S29));
+	S30 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S31));
+	S32 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S33));
+	S34 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S35));
+	S36 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S37));
+	S38 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S39));
+	S40 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S41));
+	S42 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S43));
+	S44 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S45));
+	S46 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S47));
+	S48 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S49));
+	S50 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S51));
+	S52 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S53));
+	S54 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S55));
+	S56 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S57));
+	S58 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S59));
+	S60 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S61));
+	S62 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S63));
+	S64 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S65));
+	S66 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S67));
+	S68 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S69));
+	S70 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S71));
+	S72 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S73));
+	S74 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S75));
+	S76 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S77));
+	S78 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S79));
+	S80 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S81));
+	S82 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S83));
+	S84 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S85));
+	S86 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S87));
+	S88 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S89));
+	S90 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S91));
+	S92 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S93));
+	S94 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S95));
+	S96 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S97));
+	S98 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S99));
+	S100 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S101));
+	S102 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S103));
+	S104 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S105));
+	S106 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S107));
+	S108 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S109));
+	S110 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S111));
+	S112 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S113));
+	S114 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S115));
+	S116 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S117));
+	S118 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S119));
+	S120 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S121));
+	S122 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S123));
+	S124 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S125));
+	S126 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S127));
+	S128 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S129));
+	S130 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S131));
+	S132 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S133));
+	S134 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S135));
+	S136 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S137));
+	S138 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S139));
+	S140 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S141));
+	S142 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S143));
+	S144 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S145));
+	S146 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S147));
+	S148 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S149));
+	S150 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S151));
+	S152 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S153));
+	S154 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S155));
+	S156 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S157));
+	S158 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S159));
+	S160 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S161));
+	S162 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S163));
+	S164 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S165));
+	S166 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S167));
+	S168 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S169));
+	S170 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S171));
+	S172 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S173));
+	S174 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S175));
+	S176 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S177));
+	S178 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S179));
+	S180 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S181));
+	S182 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S183));
+	S184 := ((((S27 & ((!a0) | a0)) & (!a0)) & S26) & (FALSE | S185));
+	S27 := S187;
+	S188 := S189;
+	S190 := S191;
+	S192 := S193;
+	S194 := S195;
+	S196 := S197;
+	S198 := S199;
+	S200 := S201;
+	S202 := S203;
+	S204 := S205;
+	S206 := S207;
+	S208 := S209;
+	S210 := S211;
+	S212 := S213;
+	S214 := S215;
+	S216 := S217;
+	S218 := S219;
+	S220 := S221;
+	S222 := S223;
+	S224 := S225;
+	S226 := S227;
+	S228 := S229;
+	S230 := S231;
+	S232 := S233;
+	S234 := S235;
+	S236 := S237;
+	S238 := S239;
+	S240 := S241;
+	S242 := S243;
+	S244 := S245;
+	S246 := S247;
+	S248 := S249;
+	S250 := S251;
+	S252 := S253;
+	S254 := S255;
+	S256 := S257;
+	S258 := S259;
+	S260 := S261;
+	S262 := S263;
+	S264 := S265;
+	S266 := S267;
+	S268 := S269;
+	S270 := S271;
+	S272 := S273;
+	S274 := S275;
+	S276 := S277;
+	S278 := S279;
+	S280 := S281;
+	S282 := S283;
+	S284 := S285;
+	S286 := S287;
+	S288 := S289;
+	S290 := S291;
+	S292 := S293;
+	S294 := S295;
+	S296 := S297;
+	S298 := S299;
+	S300 := S301;
+	S302 := S303;
+	S304 := S305;
+	S306 := S307;
+	S308 := S309;
+	S310 := S311;
+	S312 := S313;
+	S314 := S315;
+	S316 := S317;
+	S318 := S319;
+	S320 := S321;
+	S322 := S323;
+	S324 := S325;
+	S326 := S327;
+	S328 := S329;
+	S330 := S331;
+	S332 := S333;
+	S334 := S335;
+	S336 := S337;
+	S338 := S339;
+	S340 := S341;
+	S342 := S343;
+	S344 := S345;
+	S346 := S347;
+	S348 := S349;
+	S350 := (a0 | (TRUE & S351));
+	S352 := (a0 | (TRUE & S353));
+	S354 := (a0 | (TRUE & S355));
+	S356 := (a0 | (TRUE & S357));
+	S358 := (a0 | (TRUE & S359));
+	S360 := (a0 | (TRUE & S361));
+	S362 := (a0 | (TRUE & S363));
+	S364 := (a0 | (TRUE & S365));
+	S366 := (a0 | (TRUE & S367));
+	S368 := (a0 | (TRUE & S369));
+	S370 := (a0 | (TRUE & S371));
+	S372 := (a0 | (TRUE & S373));
+	S374 := (a0 | (TRUE & S375));
+	S376 := (a0 | (TRUE & S377));
+	S378 := (a0 | (TRUE & S379));
+	S380 := (a0 | (TRUE & S381));
+	S382 := (a0 | (TRUE & S383));
+	S26 := ((a0 | a0) & (FALSE | S385));
+	S386 := ((a0 | a0) & (FALSE | S387));
+	S388 := ((a0 | a0) & (FALSE | S389));
+	S390 := ((a0 | a0) & (FALSE | S391));
+	S392 := ((a0 | a0) & (FALSE | S393));
+	S394 := ((a0 | a0) & (FALSE | S395));
+	S396 := ((a0 | a0) & (FALSE | S397));
+	S398 := ((a0 | a0) & (FALSE | S399));
+	S400 := ((a0 | a0) & (FALSE | S401));
+	S402 := ((a0 | a0) & (FALSE | S403));
+	S404 := ((a0 | a0) & (FALSE | S405));
+	S406 := ((a0 | a0) & (FALSE | S407));
+	S408 := ((a0 | a0) & (FALSE | S409));
+	S410 := ((a0 | a0) & (FALSE | S411));
+	S412 := ((a0 | a0) & (FALSE | S413));
+	S414 := ((a0 | a0) & (FALSE | S415));
+	S416 := ((a0 | a0) & (FALSE | S417));
+	S418 := ((a0 | a0) & (FALSE | S419));
+	S420 := ((a0 | a0) & (FALSE | S421));
+	S422 := ((a0 | a0) & (FALSE | S423));
+	S424 := ((a0 | a0) & (FALSE | S425));
+	S426 := ((a0 | a0) & (FALSE | S427));
+	S428 := ((a0 | a0) & (FALSE | S429));
+INVAR
+	TRUE;
+TRANS
+	(S1 <-> (!Tail & next(S2))) & 
+	(S3 <-> (!Tail & next(S4))) & 
+	(S5 <-> (!Tail & next(S6))) & 
+	(S7 <-> (!Tail & next(S8))) & 
+	(S9 <-> (!Tail & next(S10))) & 
+	(S11 <-> (!Tail & next(S12))) & 
+	(S13 <-> (!Tail & next(S14))) & 
+	(S15 <-> (!Tail & next(S16))) & 
+	(S17 <-> (!Tail & next(S18))) & 
+	(S19 <-> (!Tail & next(S20))) & 
+	(S21 <-> (!Tail & next(S22))) & 
+	(S23 <-> (!Tail & next(S24))) & 
+	(S25 <-> (!Tail & next(S28))) & 
+	(S29 <-> (!Tail & next(S30))) & 
+	(S31 <-> (!Tail & next(S32))) & 
+	(S33 <-> (!Tail & next(S34))) & 
+	(S35 <-> (!Tail & next(S36))) & 
+	(S37 <-> (!Tail & next(S38))) & 
+	(S39 <-> (!Tail & next(S40))) & 
+	(S41 <-> (!Tail & next(S42))) & 
+	(S43 <-> (!Tail & next(S44))) & 
+	(S45 <-> (!Tail & next(S46))) & 
+	(S47 <-> (!Tail & next(S48))) & 
+	(S49 <-> (!Tail & next(S50))) & 
+	(S51 <-> (!Tail & next(S52))) & 
+	(S53 <-> (!Tail & next(S54))) & 
+	(S55 <-> (!Tail & next(S56))) & 
+	(S57 <-> (!Tail & next(S58))) & 
+	(S59 <-> (!Tail & next(S60))) & 
+	(S61 <-> (!Tail & next(S62))) & 
+	(S63 <-> (!Tail & next(S64))) & 
+	(S65 <-> (!Tail & next(S66))) & 
+	(S67 <-> (!Tail & next(S68))) & 
+	(S69 <-> (!Tail & next(S70))) & 
+	(S71 <-> (!Tail & next(S72))) & 
+	(S73 <-> (!Tail & next(S74))) & 
+	(S75 <-> (!Tail & next(S76))) & 
+	(S77 <-> (!Tail & next(S78))) & 
+	(S79 <-> (!Tail & next(S80))) & 
+	(S81 <-> (!Tail & next(S82))) & 
+	(S83 <-> (!Tail & next(S84))) & 
+	(S85 <-> (!Tail & next(S86))) & 
+	(S87 <-> (!Tail & next(S88))) & 
+	(S89 <-> (!Tail & next(S90))) & 
+	(S91 <-> (!Tail & next(S92))) & 
+	(S93 <-> (!Tail & next(S94))) & 
+	(S95 <-> (!Tail & next(S96))) & 
+	(S97 <-> (!Tail & next(S98))) & 
+	(S99 <-> (!Tail & next(S100))) & 
+	(S101 <-> (!Tail & next(S102))) & 
+	(S103 <-> (!Tail & next(S104))) & 
+	(S105 <-> (!Tail & next(S106))) & 
+	(S107 <-> (!Tail & next(S108))) & 
+	(S109 <-> (!Tail & next(S110))) & 
+	(S111 <-> (!Tail & next(S112))) & 
+	(S113 <-> (!Tail & next(S114))) & 
+	(S115 <-> (!Tail & next(S116))) & 
+	(S117 <-> (!Tail & next(S118))) & 
+	(S119 <-> (!Tail & next(S120))) & 
+	(S121 <-> (!Tail & next(S122))) & 
+	(S123 <-> (!Tail & next(S124))) & 
+	(S125 <-> (!Tail & next(S126))) & 
+	(S127 <-> (!Tail & next(S128))) & 
+	(S129 <-> (!Tail & next(S130))) & 
+	(S131 <-> (!Tail & next(S132))) & 
+	(S133 <-> (!Tail & next(S134))) & 
+	(S135 <-> (!Tail & next(S136))) & 
+	(S137 <-> (!Tail & next(S138))) & 
+	(S139 <-> (!Tail & next(S140))) & 
+	(S141 <-> (!Tail & next(S142))) & 
+	(S143 <-> (!Tail & next(S144))) & 
+	(S145 <-> (!Tail & next(S146))) & 
+	(S147 <-> (!Tail & next(S148))) & 
+	(S149 <-> (!Tail & next(S150))) & 
+	(S151 <-> (!Tail & next(S152))) & 
+	(S153 <-> (!Tail & next(S154))) & 
+	(S155 <-> (!Tail & next(S156))) & 
+	(S157 <-> (!Tail & next(S158))) & 
+	(S159 <-> (!Tail & next(S160))) & 
+	(S161 <-> (!Tail & next(S162))) & 
+	(S163 <-> (!Tail & next(S164))) & 
+	(S165 <-> (!Tail & next(S166))) & 
+	(S167 <-> (!Tail & next(S168))) & 
+	(S169 <-> (!Tail & next(S170))) & 
+	(S171 <-> (!Tail & next(S172))) & 
+	(S173 <-> (!Tail & next(S174))) & 
+	(S175 <-> (!Tail & next(S176))) & 
+	(S177 <-> (!Tail & next(S178))) & 
+	(S179 <-> (!Tail & next(S180))) & 
+	(S181 <-> (!Tail & next(S182))) & 
+	(S183 <-> (!Tail & next(S184))) & 
+	(S185 <-> (!Tail & next(S186))) & 
+	(S186 <-> (!Tail & next( (((S27 & ((!a0) | a0)) & (!a0)) & S26)))) & 
+	(S187 <-> (!Tail & next(S188))) & 
+	(S189 <-> (!Tail & next(S190))) & 
+	(S191 <-> (!Tail & next(S192))) & 
+	(S193 <-> (!Tail & next(S194))) & 
+	(S195 <-> (!Tail & next(S196))) & 
+	(S197 <-> (!Tail & next(S198))) & 
+	(S199 <-> (!Tail & next(S200))) & 
+	(S201 <-> (!Tail & next(S202))) & 
+	(S203 <-> (!Tail & next(S204))) & 
+	(S205 <-> (!Tail & next(S206))) & 
+	(S207 <-> (!Tail & next(S208))) & 
+	(S209 <-> (!Tail & next(S210))) & 
+	(S211 <-> (!Tail & next(S212))) & 
+	(S213 <-> (!Tail & next(S214))) & 
+	(S215 <-> (!Tail & next(S216))) & 
+	(S217 <-> (!Tail & next(S218))) & 
+	(S219 <-> (!Tail & next(S220))) & 
+	(S221 <-> (!Tail & next(S222))) & 
+	(S223 <-> (!Tail & next(S224))) & 
+	(S225 <-> (!Tail & next(S226))) & 
+	(S227 <-> (!Tail & next(S228))) & 
+	(S229 <-> (!Tail & next(S230))) & 
+	(S231 <-> (!Tail & next(S232))) & 
+	(S233 <-> (!Tail & next(S234))) & 
+	(S235 <-> (!Tail & next(S236))) & 
+	(S237 <-> (!Tail & next(S238))) & 
+	(S239 <-> (!Tail & next(S240))) & 
+	(S241 <-> (!Tail & next(S242))) & 
+	(S243 <-> (!Tail & next(S244))) & 
+	(S245 <-> (!Tail & next(S246))) & 
+	(S247 <-> (!Tail & next(S248))) & 
+	(S249 <-> (!Tail & next(S250))) & 
+	(S251 <-> (!Tail & next(S252))) & 
+	(S253 <-> (!Tail & next(S254))) & 
+	(S255 <-> (!Tail & next(S256))) & 
+	(S257 <-> (!Tail & next(S258))) & 
+	(S259 <-> (!Tail & next(S260))) & 
+	(S261 <-> (!Tail & next(S262))) & 
+	(S263 <-> (!Tail & next(S264))) & 
+	(S265 <-> (!Tail & next(S266))) & 
+	(S267 <-> (!Tail & next(S268))) & 
+	(S269 <-> (!Tail & next(S270))) & 
+	(S271 <-> (!Tail & next(S272))) & 
+	(S273 <-> (!Tail & next(S274))) & 
+	(S275 <-> (!Tail & next(S276))) & 
+	(S277 <-> (!Tail & next(S278))) & 
+	(S279 <-> (!Tail & next(S280))) & 
+	(S281 <-> (!Tail & next(S282))) & 
+	(S283 <-> (!Tail & next(S284))) & 
+	(S285 <-> (!Tail & next(S286))) & 
+	(S287 <-> (!Tail & next(S288))) & 
+	(S289 <-> (!Tail & next(S290))) & 
+	(S291 <-> (!Tail & next(S292))) & 
+	(S293 <-> (!Tail & next(S294))) & 
+	(S295 <-> (!Tail & next(S296))) & 
+	(S297 <-> (!Tail & next(S298))) & 
+	(S299 <-> (!Tail & next(S300))) & 
+	(S301 <-> (!Tail & next(S302))) & 
+	(S303 <-> (!Tail & next(S304))) & 
+	(S305 <-> (!Tail & next(S306))) & 
+	(S307 <-> (!Tail & next(S308))) & 
+	(S309 <-> (!Tail & next(S310))) & 
+	(S311 <-> (!Tail & next(S312))) & 
+	(S313 <-> (!Tail & next(S314))) & 
+	(S315 <-> (!Tail & next(S316))) & 
+	(S317 <-> (!Tail & next(S318))) & 
+	(S319 <-> (!Tail & next(S320))) & 
+	(S321 <-> (!Tail & next(S322))) & 
+	(S323 <-> (!Tail & next(S324))) & 
+	(S325 <-> (!Tail & next(S326))) & 
+	(S327 <-> (!Tail & next(S328))) & 
+	(S329 <-> (!Tail & next(S330))) & 
+	(S331 <-> (!Tail & next(S332))) & 
+	(S333 <-> (!Tail & next(S334))) & 
+	(S335 <-> (!Tail & next(S336))) & 
+	(S337 <-> (!Tail & next(S338))) & 
+	(S339 <-> (!Tail & next(S340))) & 
+	(S341 <-> (!Tail & next(S342))) & 
+	(S343 <-> (!Tail & next(S344))) & 
+	(S345 <-> (!Tail & next(S346))) & 
+	(S347 <-> (!Tail & next(S348))) & 
+	(S349 <-> (!Tail & next(S350))) & 
+	(S351 <-> (!Tail & next(S352))) & 
+	(S353 <-> (!Tail & next(S354))) & 
+	(S355 <-> (!Tail & next(S356))) & 
+	(S357 <-> (!Tail & next(S358))) & 
+	(S359 <-> (!Tail & next(S360))) & 
+	(S361 <-> (!Tail & next(S362))) & 
+	(S363 <-> (!Tail & next(S364))) & 
+	(S365 <-> (!Tail & next(S366))) & 
+	(S367 <-> (!Tail & next(S368))) & 
+	(S369 <-> (!Tail & next(S370))) & 
+	(S371 <-> (!Tail & next(S372))) & 
+	(S373 <-> (!Tail & next(S374))) & 
+	(S375 <-> (!Tail & next(S376))) & 
+	(S377 <-> (!Tail & next(S378))) & 
+	(S379 <-> (!Tail & next(S380))) & 
+	(S381 <-> (!Tail & next(S382))) & 
+	(S383 <-> (!Tail & next(S384))) & 
+	(S384 <-> (!Tail & next( a0))) & 
+	(S385 <-> (!Tail & next(S386))) & 
+	(S387 <-> (!Tail & next(S388))) & 
+	(S389 <-> (!Tail & next(S390))) & 
+	(S391 <-> (!Tail & next(S392))) & 
+	(S393 <-> (!Tail & next(S394))) & 
+	(S395 <-> (!Tail & next(S396))) & 
+	(S397 <-> (!Tail & next(S398))) & 
+	(S399 <-> (!Tail & next(S400))) & 
+	(S401 <-> (!Tail & next(S402))) & 
+	(S403 <-> (!Tail & next(S404))) & 
+	(S405 <-> (!Tail & next(S406))) & 
+	(S407 <-> (!Tail & next(S408))) & 
+	(S409 <-> (!Tail & next(S410))) & 
+	(S411 <-> (!Tail & next(S412))) & 
+	(S413 <-> (!Tail & next(S414))) & 
+	(S415 <-> (!Tail & next(S416))) & 
+	(S417 <-> (!Tail & next(S418))) & 
+	(S419 <-> (!Tail & next(S420))) & 
+	(S421 <-> (!Tail & next(S422))) & 
+	(S423 <-> (!Tail & next(S424))) & 
+	(S425 <-> (!Tail & next(S426))) & 
+	(S427 <-> (!Tail & next(S428))) & 
+	(S429 <-> (!Tail & next(S430))) & 
+	(S430 <-> (!Tail & next( (a0 | a0)))) & 
+	TRUE;
+LTLSPEC
+	G (! Tail)
+
