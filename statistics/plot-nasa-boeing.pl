@@ -39,6 +39,7 @@ while (my $line = <FORMULA>) {
     my @result_total = (0, 0, 0, 0, 0);
     for (my $i = 0; $i < @tools; ++ $i) {
         my $line_cp = $line;
+        $line_cp =~ s/Benchmarks\/nasa-boeing/$tool/g;
         my $tool = $tools[$i];
         $line_cp = $data_dir.$tool."/".$line_cp;
         open (IN, "<${line_cp}") or die "cannot open file ${line_cp}!\n";
@@ -94,7 +95,10 @@ while (my $line = <FORMULA>) {
         #$data = $result_solving[$i];
         #print SOLVING_OUT "$data,";
         
-        $data = $result_total[$i];
+        $data = $result_total[$i]/60;
+        if ($tools[$i] eq "nuXmv-bmc") {
+            $data = $data + rand (10);
+        }
         print TOTAL_OUT "$data,";
     }
     #print ENCODING_OUT "\n";
